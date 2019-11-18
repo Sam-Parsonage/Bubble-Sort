@@ -1,0 +1,31 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int [] arr = new int[] {23,56,48,95,20};
+				
+		bool swapped = true;
+		while (swapped == true)
+		{
+			swapped = false;
+			for (int i = 0; i < 4; i++)
+			{
+				if (arr[i] > arr[i + 1])
+				{
+					int temp = arr[i];
+					arr[i] = arr[i + 1];
+					arr[i + 1] = temp;
+					swapped = true;
+				}
+			}
+		}
+		for (int i = 0; i < 5; i++)
+		{
+			Console.WriteLine(arr[i]);
+		}
+		
+		
+	}
+}
